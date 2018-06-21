@@ -7,12 +7,14 @@ import {SkillsService} from "./skills/skills.service";
 import {SkillsComponent} from "./skills/skills.component";
 import {FormsModule} from "@angular/forms";
 import {RatingComponent} from "./rating/rating.component";
+import {HomeComponent} from "./home/home.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillsComponent,
-    RatingComponent
+    RatingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
