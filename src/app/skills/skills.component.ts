@@ -9,7 +9,7 @@ import {NgbTypeaheadSelectItemEvent} from "@ng-bootstrap/ng-bootstrap";
   selector: 'dynamo-skills',
   template: `
     <div class="form-group mb-5">
-      <label for="skill-search">Search</label>
+      <label for="skill-search">Enter your skills and interests</label>
       <input id="skill-search" class="form-control" type="text" [ngbTypeahead]="search" (selectItem)="selectItem($event)">
     </div>
   `

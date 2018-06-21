@@ -8,10 +8,6 @@ import {Job} from "../job/job.model";
 @Component({
   selector: 'dynamo-home',
   template: `
-    <h1>Helicopter Jobs Matcher</h1>
-    
-    <hr>
-    
     <ng-container [ngSwitch]="jobs.length > 0">
       <ng-template ngSwitchDefault>
         <dynamo-skills (skillsOutput)="addSkills($event)"></dynamo-skills>
@@ -20,7 +16,7 @@ import {Job} from "../job/job.model";
 
         <hr>
 
-        <button class="btn btn-lg btn-success" type="button" [disabled]="ratings.length === 0" (click)="submitSkills()">Submit skills</button>
+        <button class="btn btn-lg btn-success" type="button" [disabled]="ratings.length === 0" (click)="submitSkills()">Submit</button>
       </ng-template>
       
       <ng-template [ngSwitchCase]="true">
