@@ -6,7 +6,13 @@ import {Rating} from "./rating.model";
   styles: [
     `
       .complete {
+        background: #28a745 !important;
+        color: #fff;
         opacity: .5;
+      }
+      
+      .complete .btn {
+        display: none;
       }
     `
   ],
@@ -30,7 +36,7 @@ import {Rating} from "./rating.model";
         <ngb-rating max="5" [(rate)]="interestRating"></ngb-rating>
       </article>
 
-      <button class="btn btn-primary" type="button" [disabled]="disable" (click)="update()">Save</button>
+      <button class="btn btn-primary" type="button" [disabled]="disable" (click)="update()">Add skill</button>
     </section>
   `
 })

@@ -8,15 +8,19 @@ import {Job} from "../job/job.model";
 @Component({
   selector: 'dynamo-home',
   template: `
+    <h1 class="mb-2" *ngIf="name">Hi {{ name }}</h1>
+    
     <ng-container [ngSwitch]="jobs.length > 0">
       <ng-template ngSwitchDefault>
-        <dynamo-skills (skillsOutput)="addSkills($event)"></dynamo-skills>
+        <div *ngIf="name">
+          <dynamo-skills (skillsOutput)="addSkills($event)"></dynamo-skills>
 
-        <dynamo-rating [skill]="skill" *ngFor="let skill of skills" (result)="collectRatings($event)"></dynamo-rating>
+          <dynamo-rating [skill]="skill" *ngFor="let skill of skills" (result)="collectRatings($event)"></dynamo-rating>
 
-        <hr>
+          <hr>
 
-        <button class="btn btn-lg btn-success" type="button" [disabled]="ratings.length === 0" (click)="submitSkills()">Submit</button>
+          <button class="btn btn-lg btn-success" type="button" [disabled]="ratings.length === 0" (click)="submitSkills()">Submit</button>
+        </div>
       </ng-template>
       
       <ng-template [ngSwitchCase]="true">
@@ -48,7 +52,7 @@ export class HomeComponent implements OnInit {
   public ratings: Rating[] = [];
   public jobs: Job[] = [];
   public loading: boolean = false;
-  private name: string = null;
+  public name: string = null;
 
   constructor (
     private ngbModal: NgbModal,
