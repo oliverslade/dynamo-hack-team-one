@@ -41,20 +41,20 @@
                 "type": "object",
                 "properties": {
                     "java": {
-                        "skill-rating": 5,
-                        "interest-rating": 5
+                        "skillRating": 5,
+                        "interestRating": 5
                     },
                     "html": {
-                        "skill-rating": 4,
-                        "interest-rating": 4
+                        "skillRating": 4,
+                        "interestRating": 4
                     },
                     "javascript": {
-                        "skill-rating": 3,
-                        "interest-rating": 3
+                        "skillRating": 3,
+                        "interestRating": 3
                     },
                     "css": {
-                        "skill-rating": 2,
-                        "interest-rating": 2
+                        "skillRating": 2,
+                        "interestRating": 2
                     }
                 }
             }
