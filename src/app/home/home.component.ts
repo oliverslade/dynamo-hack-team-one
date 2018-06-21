@@ -26,7 +26,7 @@ import {Job} from "../job/job.model";
       <ng-template [ngSwitchCase]="true">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h2>Jobs</h2>
+            <h2>Current roles matching your skills</h2>
             
             <hr>
             
@@ -34,7 +34,7 @@ import {Job} from "../job/job.model";
           </div>
 
           <div class="col-12 col-md-6">
-            <h2>Here are some resources you might like</h2>
+            <h2>Learn about your interests</h2>
             
             <hr>
             
