@@ -19,17 +19,12 @@ export class SkillsService {
       skills: [
         'Java',
         'JavaScript',
-        'PHP',
         'Python',
         'C#',
-        'Scala',
         'HTML',
         'CSS',
-        'Angular',
         'React',
-        'MongoDB',
-        'SQL',
-        'JQuery'
+        'SQL'
       ]
     });
   }
