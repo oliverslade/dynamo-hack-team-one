@@ -4,10 +4,11 @@ import {Skills} from "./skills.model";
 import {HttpClient} from "@angular/common/http";
 import {ISkillsDto, SkillsDto} from "./skills.dto";
 import {Rating} from "../rating/rating.model";
+import {Job} from "../job/job.model";
 
 @Injectable()
 export class SkillsService {
-  private url: string = ''; // TODO: Endpoint url
+  private url: string = 'http://34.245.166.43:3000/jobs';
 
   constructor (
     private httpClient: HttpClient
@@ -33,13 +34,10 @@ export class SkillsService {
     });
   }
 
-  // TODO: Response model
-  public postSkills (name: string, ratings: Rating[]): Observable<any> {
+  public postSkills (name: string, ratings: Rating[]): Observable<Job[]> {
     const skills: ISkillsDto = {};
 
     ratings.forEach((value: Rating): void => {
-      const dto: ISkillsDto = {};
-
       skills[value.skill] = {
         interestRating: value.interestRating,
         skillRating: value.skillRating
@@ -51,6 +49,6 @@ export class SkillsService {
       skills
     };
 
-    return this.httpClient.post<any>(this.url, body);
+    return this.httpClient.post<Job[]>(this.url, body);
   }
 }

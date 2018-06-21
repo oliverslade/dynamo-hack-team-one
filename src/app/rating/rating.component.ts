@@ -13,9 +13,7 @@ import {Rating} from "./rating.model";
   template: `
     <section class="mb-3 bg-light p-3" [ngClass]="{
       complete: disable
-    }">
-      <!--<button class="btn btn-danger" type="button" (click)="remove($event)">Remove</button>-->
-      
+    }">      
       <h2>{{ skill }}</h2>
 
       <hr>
