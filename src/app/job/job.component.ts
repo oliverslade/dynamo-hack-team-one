@@ -1,5 +1,6 @@
 import {Component, Input} from "@angular/core";
 import {Job} from "./job.model";
+import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
 
 @Component({
   selector: 'dynamo-job',
@@ -11,7 +12,9 @@ import {Job} from "./job.model";
       
       <hr>
       
-      <p>{{ job.description }}</p>
+      <h4>Description</h4>
+
+      <div [innerHtml]="job.description"></div>
       
       <p class="text-muted"><b>Location:</b> {{ job.location }}</p>
       
@@ -21,4 +24,12 @@ import {Job} from "./job.model";
 })
 export class JobComponent {
   @Input() public job: Job;
+
+  constructor (
+    private domSanitizer: DomSanitizer
+  ) {}
+
+  public html (input: string): SafeHtml {
+    return this.domSanitizer.bypassSecurityTrustHtml(input)
+  }
 }

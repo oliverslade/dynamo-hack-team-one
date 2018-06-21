@@ -26,7 +26,17 @@ import {Job} from "../job/job.model";
           <div class="col-12 col-md-6">
             <h2>Jobs</h2>
             
+            <hr>
+            
             <dynamo-job [job]="job" *ngFor="let job of jobs"></dynamo-job>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <h2>Here are some resources you might like</h2>
+            
+            <hr>
+            
+            <dynamo-resource></dynamo-resource>
           </div>
         </div>
       </ng-template>

@@ -11,6 +11,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {IntroductionComponent} from "./introduction/introduction.component";
 import {ReactiveFormsModule} from "@angular/forms";
 import {JobComponent} from "./job/job.component";
+import {ResourceService} from "./resource/resource.service";
+import {ResourceComponent} from "./resource/resource.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import {JobComponent} from "./job/job.component";
     RatingComponent,
     HomeComponent,
     IntroductionComponent,
-    JobComponent
+    JobComponent,
+    ResourceComponent
   ],
   entryComponents: [
     IntroductionComponent
@@ -32,6 +35,7 @@ import {JobComponent} from "./job/job.component";
     ReactiveFormsModule
   ],
   providers: [
+    ResourceService,
     SkillsService
   ],
   bootstrap: [AppComponent]
