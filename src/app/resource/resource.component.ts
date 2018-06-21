@@ -13,8 +13,8 @@ import {Resource} from "./resource.model";
       
       <hr>
       
-      <p class="text-muted"><b>Location:</b> {{ resource.location }}</p>
-      <p class="text-muted"><b>Type:</b> {{ resource.type }}</p>
+      <p class="text-muted mb-0"><b>Location:</b> {{ resource.location }}</p>
+      <p class="text-muted mb-0"><b>Type:</b> {{ resource.type }}</p>
       <p class="text-muted"><b>Cost:</b> {{ resource.cost }}</p>
 
       <a class="btn btn-lg btn-primary" [href]="resource.url">View job</a>

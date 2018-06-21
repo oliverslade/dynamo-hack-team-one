@@ -13,6 +13,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {JobComponent} from "./job/job.component";
 import {ResourceService} from "./resource/resource.service";
 import {ResourceComponent} from "./resource/resource.component";
+import {LoadingComponent} from "./loading/loading.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ResourceComponent} from "./resource/resource.component";
     HomeComponent,
     IntroductionComponent,
     JobComponent,
-    ResourceComponent
+    ResourceComponent,
+    LoadingComponent
   ],
   entryComponents: [
     IntroductionComponent

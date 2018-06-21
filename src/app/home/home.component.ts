@@ -10,6 +10,8 @@ import {Job} from "../job/job.model";
   template: `
     <h1>Home</h1>
     
+    <hr>
+    
     <ng-container [ngSwitch]="jobs.length > 0">
       <ng-template ngSwitchDefault>
         <dynamo-skills (skillsOutput)="addSkills($event)"></dynamo-skills>
@@ -41,12 +43,15 @@ import {Job} from "../job/job.model";
         </div>
       </ng-template>
     </ng-container>
+    
+    <dynamo-loading *ngIf="loading"></dynamo-loading>
   `
 })
 export class HomeComponent implements OnInit {
   public skills: string[];
   public ratings: Rating[] = [];
   public jobs: Job[] = [];
+  public loading: boolean = false;
   private name: string = null;
 
   constructor (
@@ -69,10 +74,15 @@ export class HomeComponent implements OnInit {
   }
 
   public submitSkills (): void {
+    this.loading = true;
+
     this.skillsService
       .postSkills(this.name, this.ratings)
       .subscribe((jobs: Job[]): void => {
-        this.jobs = jobs;
+        setTimeout((): void => {
+          this.loading = false;
+          this.jobs = jobs;
+        }, 500);
       });
   }
 
