@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {SkillsService} from "./skills/skills.service";
 import {SkillsComponent} from "./skills/skills.component";
-import {FormsModule} from "@angular/forms";
 import {RatingComponent} from "./rating/rating.component";
 import {HomeComponent} from "./home/home.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import {HomeComponent} from "./home/home.component";
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    FormsModule
+    HttpClientModule
   ],
   providers: [
     SkillsService

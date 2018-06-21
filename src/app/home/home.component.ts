@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {Rating} from "../rating/rating.model";
+import {SkillsService} from "../skills/skills.service";
 
 @Component({
   selector: 'dynamo-home',
@@ -7,15 +9,30 @@ import {Component} from '@angular/core';
     
     <dynamo-skills (skillsOutput)="addSkills($event)"></dynamo-skills>
 
+    <dynamo-rating [skill]="skill" *ngFor="let skill of skills" (result)="collectRatings($event)"></dynamo-rating>
+    
     <hr>
-
-    <dynamo-rating [skill]="skill" *ngFor="let skill of skills"></dynamo-rating>
+    
+    <button class="btn btn-lg btn-success" type="button" [disabled]="ratings.length === 0" (click)="submitSkills()">Submit skills</button>
   `
 })
 export class HomeComponent {
   public skills: string[];
+  public ratings: Rating[] = [];
+
+  constructor (
+    private skillsService: SkillsService
+  ) {}
 
   public addSkills (skills: string[]): void {
     this.skills = skills;
+  }
+
+  public collectRatings (rating: Rating): void {
+    this.ratings.push(rating);
+  }
+
+  public submitSkills (): void {
+    this.skillsService.postSkills('Mo', this.ratings);
   }
 }

@@ -8,7 +8,7 @@ import {NgbTypeaheadSelectItemEvent} from "@ng-bootstrap/ng-bootstrap";
 @Component({
   selector: 'dynamo-skills',
   template: `
-    <div class="form-group">
+    <div class="form-group mb-5">
       <label for="skill-search">Search</label>
       <input id="skill-search" class="form-control" type="text" [ngbTypeahead]="search" (selectItem)="selectItem($event)">
     </div>
@@ -36,7 +36,7 @@ export class SkillsComponent {
   ) {}
 
   public selectItem ({item}: NgbTypeaheadSelectItemEvent): void {
-    this.skills.push(item);
+    this.skills.unshift(item);
 
     this.skillsOutput.emit(this.skills);
   }
