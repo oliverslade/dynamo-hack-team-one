@@ -7,6 +7,8 @@ import {Rating} from "../rating/rating.model";
 
 @Injectable()
 export class SkillsService {
+  private url: string = ''; // TODO: Endpoint url
+
   constructor (
     private httpClient: HttpClient
   ) {}
@@ -31,7 +33,8 @@ export class SkillsService {
     });
   }
 
-  public postSkills (name: string, ratings: Rating[]) {
+  // TODO: Response model
+  public postSkills (name: string, ratings: Rating[]): Observable<any> {
     const skills: ISkillsDto = {};
 
     ratings.forEach((value: Rating): void => {
@@ -48,6 +51,6 @@ export class SkillsService {
       skills
     };
 
-    console.log(body);
+    return this.httpClient.post<any>(this.url, body);
   }
 }

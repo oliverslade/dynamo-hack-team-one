@@ -33,6 +33,7 @@ export class HomeComponent {
   }
 
   public submitSkills (): void {
+    // TODO: Subscribe
     this.skillsService.postSkills('Mo', this.ratings);
   }
 }
