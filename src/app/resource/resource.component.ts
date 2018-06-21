@@ -7,7 +7,7 @@ import {Resource} from "./resource.model";
   selector: 'dynamo-resource',
   template: `
     <article class="mb-3 bg-light p-3" *ngFor="let resource of resources$ | async">
-      <img alt="" [src]="resource.company_logo" *ngIf="resource.company_logo">
+      <img class="img-thumbnail mb-3" alt="" [src]="resource.company_logo" *ngIf="resource.company_logo">
       
       <h3>{{ resource.title }}</h3>
       

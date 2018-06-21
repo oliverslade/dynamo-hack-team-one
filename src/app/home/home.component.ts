@@ -8,7 +8,7 @@ import {Job} from "../job/job.model";
 @Component({
   selector: 'dynamo-home',
   template: `
-    <h1>Home</h1>
+    <h1>Helicopter Jobs Matcher</h1>
     
     <hr>
     

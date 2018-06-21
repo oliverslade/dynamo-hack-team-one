@@ -6,7 +6,7 @@ import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
   selector: 'dynamo-job',
   template: `
     <article class="mb-3 bg-light p-3">
-      <img alt="" [src]="job.company_logo">
+      <img class="img-thumbnail mb-3" alt="" [src]="job.company_logo">
       
       <h3>{{ job.title }}</h3>
       
