@@ -18,7 +18,7 @@ import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
       
       <p class="text-muted"><b>Location:</b> {{ job.location }}</p>
       
-      <a class="btn btn-lg btn-primary" [href]="job.url">View job</a>
+      <a class="btn btn-lg btn-primary" target="_blank" [href]="job.url">View job</a>
     </article>
   `
 })

@@ -17,7 +17,7 @@ import {Resource} from "./resource.model";
       <p class="text-muted mb-0"><b>Type:</b> {{ resource.type }}</p>
       <p class="text-muted"><b>Cost:</b> {{ resource.cost }}</p>
 
-      <a class="btn btn-lg btn-primary" [href]="resource.url">View job</a>
+      <a class="btn btn-lg btn-primary" target="_blank" [href]="resource.url">View course</a>
     </article>
   `
 })
