@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Skills Matcher Schema",
+    "type": "object",
+    "individualDetailType": {
+        "type": "object",
+        "properties": {
+            "title": {
+                "type": "string",
+                "enum": [
+                    "Mr",
+                    "Mrs",
+                    "Miss",
+                    "Ms",
+                    "Dr",
+                    "Sir",
+                    "Professor",
+                    "Lord"
+                ]
+            },
+            "firstName": {
+                "type": "string",
+                "pattern": "^[a-zA-Z\u00C0-\u00FF'‘’\u2014\u2013\u2010\u002d]{1,35}$"
+            },
+            "lastName": {
+                "type": "string",
+                "pattern": "^[a-zA-Z\u00C0-\u00FF'‘’\u2014\u2013\u2010\u002d]{1,35}$"
+            },
+            "dateOfBirth": {
+                "type": "string",
+                "pattern": "^(((19|20)([2468][048]|[13579][26]|0[48])|2000)[-]02[-]29|((19|20)[0-9]{2}[-](0[469]|11)[-](0[1-9]|1[0-9]|2[0-9]|30)|(19|20)[0-9]{2}[-](0[13578]|1[02])[-](0[1-9]|[12][0-9]|3[01])|(19|20)[0-9]{2}[-]02[-](0[1-9]|1[0-9]|2[0-8])))$"
+            }
+        }
+    },
+    "skills": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+            "type": "object",
+            "skills": {
+                "type": "object",
+                "properties": {
+                    "java": {
+                        "skill-rating": 5,
+                        "interest-rating": 5
+                    },
+                    "html": {
+                        "skill-rating": 4,
+                        "interest-rating": 4
+                    },
+                    "javascript": {
+                        "skill-rating": 3,
+                        "interest-rating": 3
+                    },
+                    "css": {
+                        "skill-rating": 2,
+                        "interest-rating": 2
+                    }
+                }
+            }
+        }
+    }
+}
