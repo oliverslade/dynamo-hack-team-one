@@ -12,7 +12,7 @@ import {NgbActiveModal} from "@ng-bootstrap/ng-bootstrap";
 
       <div class="modal-body">
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name">Enter your name</label>
           <input id="name" class="form-control" type="text" formControlName="name" />
         </div>
       </div>
