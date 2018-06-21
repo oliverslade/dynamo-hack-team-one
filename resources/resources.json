@@ -1,0 +1,88 @@
+{
+    "resources": [
+        { "skill":"java",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/java", "description": "This is a really useful webiste for leaning about Java", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/java", "description": "Useful courses for upskilling on Java", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"javascript",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/js", "description": "This is a really useful webiste for leaning about JavaScript", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/js", "description": "Useful courses for upskilling on JavaScript", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"node",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/node", "description": "This is a really useful webiste for leaning about Node", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/node", "description": "Useful courses for upskilling on Node", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"scala",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/scala", "description": "This is a really useful webiste for leaning about Scala", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/scala", "description": "Useful courses for upskilling on Scala", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"python",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/python", "description": "This is a really useful webiste for leaning about Python", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/python", "description": "Useful courses for upskilling on Python", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"html",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/html", "description": "This is a really useful webiste for leaning about HTML", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/html", "description": "Useful courses for upskilling on HTML", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"php",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/html", "description": "This is a really useful webiste for leaning about PHP", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/html", "description": "Useful courses for upskilling on PHP", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"css",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/html", "description": "This is a really useful webiste for leaning about CSS", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/html", "description": "Useful courses for upskilling on CSS", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"angular",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/html", "description": "This is a really useful webiste for leaning about Angular", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/html", "description": "Useful courses for upskilling on Angular", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"react",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/html", "description": "This is a really useful webiste for leaning about React", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/html", "description": "Useful courses for upskilling on React", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"mongodb",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/html", "description": "This is a really useful webiste for leaning about MongoDB", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/html", "description": "Useful courses for upskilling on MongoDB", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        },
+        { "skill":"sql",
+            "resources":
+            [
+                {"url": "http://www.udemy.com/html", "description": "This is a really useful webiste for leaning about SQL", "logo": "https://www.udemy.com/staticx/udemy/images/v6/logo-coral.svg"},
+                {"url": "http://www.pluralsight.com/html", "description": "Useful courses for upskilling on SQL", "logo": "https://www.pluralsight.com/content/dam/pluralsight/newsroom/brand-assets/logos/pluralsight-logo-hor-color-1@2x.png"}
+            ]
+        }
+    ]
+  }
